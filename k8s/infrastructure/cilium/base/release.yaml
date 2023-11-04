@@ -30,18 +30,6 @@ spec:
       enabled: false
     bpf:
       masquerade: true
-    clustermesh:
-      apiserver:
-        kvstoremesh:
-          enabled: false
-        service:
-          type: NodePort
-        tls:
-          auto:
-            enabled: true
-            method: cronJob
-            schedule: 0 0 1 */4 *
-      useAPIServer: true
     devices:
     - eth0
     enableIPv6Masquerade: false

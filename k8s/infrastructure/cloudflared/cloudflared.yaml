@@ -6,14 +6,13 @@ metadata:
   name: cloudflared
   namespace: cloudflared
 spec:
-  replicas: 0
   selector:
     matchLabels:
-      pod: cloudflared
+      app: cloudflared
   template:
     metadata:
       labels:
-        pod: cloudflared
+        app: cloudflared
     spec:
       containers:
       - command:

@@ -5,7 +5,7 @@ metadata:
   name: infrastructure-cilium
   namespace: flux-system
 spec:
-  path: ./k8s/infrastructure/cilium/k8s-stg
+  path: ./k8s/infrastructure/cilium/stg
   prune: true
   sourceRef:
     kind: GitRepository

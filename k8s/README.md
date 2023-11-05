@@ -3,6 +3,9 @@
 ### Set `MACAddressPolicy=none`
 ```sh
 nano /usr/lib/systemd/network/99-default.link
+
+sudo apt update
+sudo apt install nfs-common
 ```
 
 ## Control Plane Node

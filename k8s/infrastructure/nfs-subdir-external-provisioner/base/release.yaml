@@ -25,4 +25,6 @@ spec:
   uninstall:
     keepHistory: false
   values:
-    
+    nfs:
+      path: /mnt/tank/k8s
+      server: truenas.lan

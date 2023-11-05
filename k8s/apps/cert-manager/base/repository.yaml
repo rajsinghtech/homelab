@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: vault
+  name: jetstack
 spec:
   interval: 1h
-  url: https://helm.releases.hashicorp.com
+  url: https://charts.jetstack.io/

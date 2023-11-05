@@ -2,10 +2,12 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: infrastructure-cert-manager
+  name: apps-test
   namespace: flux-system
 spec:
-  path: ./k8s/infrastructure/cert-manager/stg
+  dependsOn:
+    - name: infrastructure
+  path: ./apps/test
   prune: true
   sourceRef:
     kind: GitRepository

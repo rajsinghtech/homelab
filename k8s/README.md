@@ -24,7 +24,7 @@ flux bootstrap github \
   --owner=rajsinghtech \
   --repository=homelab \
   --branch=main \
-  --path=k8s/clusters/k8s-stg \
+  --path=k8s/clusters/stg \
   --personal    
 ```
 

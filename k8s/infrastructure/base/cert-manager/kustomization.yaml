@@ -5,4 +5,3 @@ namespace: cert-manager
 resources:
   - ./release.yaml
   - ./repository.yaml
-  - ./namespace.yaml

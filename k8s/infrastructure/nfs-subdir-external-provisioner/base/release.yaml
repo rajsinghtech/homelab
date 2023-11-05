@@ -28,3 +28,5 @@ spec:
     nfs:
       path: /mnt/tank/k8s
       server: truenas.lan
+    storageClass:
+      defaultClass: true

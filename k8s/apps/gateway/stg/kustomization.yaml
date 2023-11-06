@@ -4,5 +4,4 @@ namespace: gateway-system
 resources:
   - ../base
   - ./gateway.yaml
-  - ./gateway-service.yaml
   - ./certificate.yaml

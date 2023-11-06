@@ -1,26 +1,16 @@
----
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
 metadata:
   name: envoy-gateway
 spec:
-  interval: 15m
-  chart:
-    spec:
-      chart: envoy-gateway
-      sourceRef:
-        kind: OCIRepository
-        name: envoy-gateway
-        namespace: flux-system
-  maxHistory: 2
-  install:
-    createNamespace: true
-    remediation:
-      retries: 3
-  upgrade:
-    cleanupOnFail: true
-    remediation:
-      retries: 3
-  uninstall:
-    keepHistory: false
-  values:
+  interval: 5m
+  bundle: #ignored if source reference is not OCIRegistry
+    name: envoy-gateway
+  path: "./"
+  prune: true
+  sourceRef:
+    kind: OCIRegistry
+    name: envoy-gateway
+    namespace: flux-system
+  wait: true
+  timeout: 2m

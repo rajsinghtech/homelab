@@ -3,7 +3,7 @@ kind: Gateway
 metadata:
   name: rajsingh-info
 spec:
-  # gatewayClassName: cilium
+  gatewayClassName: envoy-proxy-rajsingh-info
   listeners:
   - name: https-rajsingh-info
     protocol: HTTPS

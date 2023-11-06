@@ -4,7 +4,7 @@ metadata:
   name: hubble
 spec:
   parentRefs:
-  - name: rajsingh-info
+  - name: eg
     namespace: gateway-system
   hostnames:
   - "hubble.rajsingh.info"  

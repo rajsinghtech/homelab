@@ -10,6 +10,7 @@ spec:
     protocol: HTTPS
     port: 443
     tls:
+      mode: Terminate
       certificateRefs:
       - name: wildcard-rajsingh-info-tls
         kind: Secret

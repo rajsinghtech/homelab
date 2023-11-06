@@ -5,3 +5,4 @@ namespace: flux-system
 resources:
   - ./jetstack.yaml
   - ./cilium.yaml
+  - ./envoy-gateway.yaml

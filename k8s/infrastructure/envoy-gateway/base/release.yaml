@@ -4,9 +4,7 @@ metadata:
   name: envoy-gateway
 spec:
   interval: 5m
-  bundle: #ignored if source reference is not OCIRegistry
-    name: envoy-gateway
-  path: "./"
+  path: ./
   prune: true
   sourceRef:
     kind: OCIRegistry

@@ -6,4 +6,3 @@ resources:
   - ./namespace.yaml
   - ./l2policy.yaml
   - ./release.yaml
-  - ./repository.yaml

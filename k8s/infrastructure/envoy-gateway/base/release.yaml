@@ -7,11 +7,11 @@ spec:
   interval: 15m
   chart:
     spec:
-      chart: envoy-gateway
-      version: v1.13.1
+      chart: gateway-helm
+      version: v0.0.0-latest
       sourceRef:
         kind: HelmRepository
-        name: envoy-gateway
+        name: envoyproxy
         namespace: flux-system
   maxHistory: 2
   install:

@@ -10,3 +10,4 @@ spec:
       id: 2
       name: stg
     k8sServiceHost: 10.69.201.201
+    

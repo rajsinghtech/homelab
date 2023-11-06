@@ -7,7 +7,7 @@ spec:
   path: ./
   prune: true
   sourceRef:
-    kind: OCIRegistry
+    kind: OCIRepository
     name: envoy-gateway
     namespace: flux-system
   wait: true

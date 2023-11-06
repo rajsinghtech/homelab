@@ -3,7 +3,7 @@ kind: Gateway
 metadata:
   name: rajsingh-info
 spec:
-  gatewayClassName: envoy-proxy-rajsingh-info
+  gatewayClassName: eg
   listeners:
   - name: https-rajsingh-info
     protocol: HTTPS

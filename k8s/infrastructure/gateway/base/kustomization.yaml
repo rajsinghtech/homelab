@@ -3,5 +3,8 @@ kind: Kustomization
 namespace: gateway-system
 resources:
   - ./namespace.yaml
-  - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.0.0/standard-install.yaml
-
+  - ./gateway.networking.k8s.io_gatewayclasses.yaml
+  - ./gateway.networking.k8s.io_gateways.yaml
+  - ./gateway.networking.k8s.io_httproutes.yaml
+  - ./gateway.networking.k8s.io_referencegrants.yaml
+  - ./gateway.networking.k8s.io_tlsroutes.yaml

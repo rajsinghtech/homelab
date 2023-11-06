@@ -6,7 +6,7 @@ metadata:
   labels:
     expose: yes
 spec:
-  loadBalancerIP: 10.69.12.69
+  loadBalancerIP: 10.69.69.201
   ports:
     - name: port-443
       protocol: TCP

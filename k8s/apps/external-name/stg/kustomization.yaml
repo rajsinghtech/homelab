@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: external-name
 resources:
   - ../base
-  - ./clusterissuer.yaml
+  - ./ingress.yaml

@@ -2,9 +2,9 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: contour
+  name: haproxy
 spec:
   values:
     service:
-      type: ClusterIP
+      type: LoadBalancer
       loadBalancerIP: 10.69.69.1

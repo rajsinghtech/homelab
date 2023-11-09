@@ -5,4 +5,4 @@ namespace: flux-system
 resources:
   - ./jetstack.yaml
   - ./cilium.yaml
-  - ./bitnami.yaml
+  - ./haproxy.yaml

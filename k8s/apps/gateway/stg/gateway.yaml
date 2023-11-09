@@ -20,7 +20,7 @@ spec:
       tls:
         mode: Terminate
         certificateRefs:
-        - name: wildcard-rajsingh-info-tls
+        - name: wildcard-stg-rajsingh-info-tls
           kind: Secret
           group: ""
           namespace: gateway-system

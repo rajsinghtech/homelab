@@ -5,8 +5,8 @@ metadata:
   name: certificate
 spec:
   dnsNames:
-    - "*.rajsingh.info"
-  secretName: wildcard-rajsingh-info-tls
+    - "*.stg.rajsingh.info"
+  secretName: wildcard-stg-rajsingh-info-tls
   issuerRef:
     name: rajsingh-info-global-issuer
     kind: ClusterIssuer

@@ -6,4 +6,3 @@ resources:
   - ./jetstack.yaml
   - ./cilium.yaml
   - ./bitnami.yaml
-  - ./envoyproxy.yaml

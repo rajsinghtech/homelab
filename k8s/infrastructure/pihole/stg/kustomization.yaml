@@ -4,6 +4,7 @@ namespace: pihole
 resources:
   - ../base
   - ./ingress.yaml
+  - ./service.yaml
 patches:
   - path: release.yaml
     target:

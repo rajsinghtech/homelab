@@ -7,8 +7,5 @@ metadata:
 spec:
   values:
     serviceDns:
-      loadBalancerIP: 10.69.69.10
-      labels:
-        expose: yes
-      type: LoadBalancer
+      type: ClusterIP
     

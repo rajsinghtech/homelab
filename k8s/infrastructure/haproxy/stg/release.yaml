@@ -6,7 +6,5 @@ metadata:
 spec:
   values:
     service:
-      labels:
-        expose: yes
       type: LoadBalancer
       loadBalancerIP: 10.69.69.1

@@ -6,3 +6,4 @@ resources:
   - ./jetstack.yaml
   - ./cilium.yaml
   - ./haproxy.yaml
+  - ./pihole.yaml

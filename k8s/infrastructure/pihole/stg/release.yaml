@@ -8,6 +8,7 @@ spec:
   values:
     serviceDns:
       loadBalancerIP: 10.69.69.10
-      annotations:
+      labels:
+        expose: yes
       type: LoadBalancer
     

@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: pihole
 resources:
   - ../base
+  - ./ingress.yaml
 patches:
   - path: release.yaml
     target:

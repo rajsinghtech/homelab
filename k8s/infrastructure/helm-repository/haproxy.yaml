@@ -6,4 +6,4 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1h
-  url: https://haproxytech.github.io/helm-charts
+  url: https://haproxy-ingress.github.io/charts

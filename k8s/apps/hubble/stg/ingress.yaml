@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hubble-rajsingh-info-tls
+  namespace: external-name
+  annotations:
+    cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
+    kubernetes.io/tls-acme: 'true'
+spec:
+  ingressClassName: haproxy
+  rules:
+  - host: hubble.stg.rajsingh.info
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: hubble-svc
+            port:
+              number: 80
+  tls:
+  - secretName: hubble-rajsingh-info-tls
+    hosts:
+    - hubble.stg.rajsingh.info

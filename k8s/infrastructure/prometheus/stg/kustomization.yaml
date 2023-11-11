@@ -3,7 +3,3 @@ kind: Kustomization
 namespace: prometheus
 resources:
   - ../base
-patches:
-  - path: release.yaml
-    target:
-      kind: HelmRelease

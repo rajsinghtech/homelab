@@ -5,7 +5,6 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: "true"
-    haproxy.org/path-rewrite: "/admin"
 spec:
   ingressClassName: haproxy
   rules:

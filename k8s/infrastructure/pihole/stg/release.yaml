@@ -6,7 +6,7 @@ metadata:
   namespace: kube-system
 spec:
   values:
-    hostname: "pihole-stg"
+    hostname: "rajsingh-stg"
     serviceDns:
       externalTrafficPolicy: Local
       loadBalancerIP: "10.69.69.10"

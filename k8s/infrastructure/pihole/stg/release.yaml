@@ -6,3 +6,14 @@ metadata:
   namespace: kube-system
 spec:
   values:
+    hostname: "pihole-stg"
+    serviceDns:
+      annotations: 
+        expose: yes
+      externalTrafficPolicy: Local
+      loadBalancerIP: "10.69.69.10"
+      loadBalancerIPv6: ""
+      mixedService: true
+      nodePort: ""
+      port: 53
+      type: LoadBalancer

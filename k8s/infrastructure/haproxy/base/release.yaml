@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: haproxytech/kubernetes-ingress
-      version: x
+      version: 1.34.1
       sourceRef:
         kind: HelmRepository
         name: haproxy

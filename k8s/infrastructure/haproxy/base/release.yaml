@@ -25,7 +25,8 @@ spec:
   uninstall:
     keepHistory: false
   values:
-    ingressClassResource:
-      enabled: true
-      default: true
-    hostNetwork: true
+    controller:
+      ingressClassResource:
+        enabled: true
+        default: true
+      hostNetwork: true

@@ -8,4 +8,3 @@ resources:
   - ./haproxy.yaml
   - ./pihole.yaml
   - ./nfs-subdir-external-provisioner.yaml
-  - ./cloudflared.yaml

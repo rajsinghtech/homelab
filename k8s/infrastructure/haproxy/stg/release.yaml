@@ -5,9 +5,7 @@ metadata:
   name: haproxy
 spec:
   values:
-    # controller:
-    #   service:
-    #     labels:
-    #       expose: yes
-    #     type: LoadBalancer
-    #     loadBalancerIP: 10.69.69.1
+    controller:
+      service:
+        type: LoadBalancer
+        loadBalancerIP: 10.69.69.1

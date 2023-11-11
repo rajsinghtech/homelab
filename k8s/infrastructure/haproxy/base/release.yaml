@@ -4,7 +4,7 @@ kind: HelmRelease
 metadata:
   name: haproxy
 spec:
-  interval: 15m
+  interval: 2m
   chart:
     spec:
       chart: haproxytech/kubernetes-ingress

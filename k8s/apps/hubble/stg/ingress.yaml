@@ -16,7 +16,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: hubble-svc
+            name: hubble-ui
             port:
               number: 80
   tls:

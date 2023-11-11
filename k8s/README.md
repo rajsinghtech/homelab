@@ -31,5 +31,5 @@ flux bootstrap github \
 ## Worker Nodes
 ```sh
 ufw disable
-    curl -sfL https://get.k3s.io | K3S_URL=https://K8S-STG1.lan:6443 K3S_TOKEN=K10d53fb4d289fae7471671f6f147997316fa0225458d3d6cb88d8ff26821c1a22a::server:12345 INSTALL_K3S_EXEC='--flannel-backend=none --disable-network-policy --disable traefik --disable servicelb --disable-kube-proxy --node-name K8S-STG2.lan' sh -
+curl -sfL https://get.k3s.io | K3S_URL=https://K8S-STG1.lan:6443 K3S_TOKEN=K105798aac87939b9f799add02e363a18da09d62b93356853edbf8b1116274d929a::server:12345 INSTALL_K3S_EXEC='--flannel-backend=none --disable-network-policy --disable traefik --disable servicelb --disable-kube-proxy --node-name K8S-STG2.lan' sh -
 ```

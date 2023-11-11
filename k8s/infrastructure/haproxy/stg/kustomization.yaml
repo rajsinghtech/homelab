@@ -3,7 +3,6 @@ kind: Kustomization
 namespace: haproxy
 resources:
   - ../base
-  - ./service.yaml
 patches:
   - path: release.yaml
     target:

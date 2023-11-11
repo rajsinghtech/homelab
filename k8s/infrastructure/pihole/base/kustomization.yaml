@@ -5,3 +5,4 @@ namespace: pihole
 resources:
   - ./release.yaml
   - ./namespace.yaml
+  - ./service.yaml

@@ -25,14 +25,13 @@ spec:
   uninstall:
     keepHistory: false
   values:
-    serviceDns:
-    type: ClusterIP
     dnsmasq:
       customDnsEntries:
-        - address=/nas/192.168.178.10
+        - address=/.stg.rajsingh.info/10.69.69.1
+        - address=/.rajsingh.info/10.69.69.2
     
-      customCnameEntries:
-        - cname=foo.nas,nas
+      # customCnameEntries:
+      #   - cname=foo.nas,nas
 
     persistentVolumeClaim:
       enabled: true

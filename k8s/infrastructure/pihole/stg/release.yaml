@@ -6,15 +6,3 @@ metadata:
   namespace: kube-system
 spec:
   values:
-    ingress:
-      annotations: 
-        cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
-        kubernetes.io/tls-acme: 'true'
-      enabled: true
-      hosts:
-      - pihole.stg.rajsingh.info
-      path: /
-      tls: 
-      - secretName: pihole-rajsingh-info-tls
-        hosts:
-        - pihole.stg.rajsingh.info

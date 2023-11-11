@@ -2,10 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: pihole-rajsingh-info-tls
-  namespace: external-name
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: "true"
+    haproxy.org/path-rewrite: "/admin"
 spec:
   ingressClassName: haproxy
   rules:
@@ -16,9 +16,9 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: pihole-svc
+                name: pihole-web
                 port:
-                  number: 80
+                  name: http
   tls:
     - secretName: pihole-rajsingh-info-tls
       hosts:

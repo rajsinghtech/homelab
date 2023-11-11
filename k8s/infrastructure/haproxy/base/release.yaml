@@ -7,7 +7,7 @@ spec:
   interval: 15m
   chart:
     spec:
-      chart: haproxy-ingress
+      chart: haproxytech/kubernetes-ingress
       version: x
       sourceRef:
         kind: HelmRepository
@@ -25,8 +25,8 @@ spec:
   uninstall:
     keepHistory: false
   values:
-    controller: 
-      ingressClassResource:
-        enabled: true
-        default: true
-      hostNetwork: true
+    # controller: 
+    #   ingressClassResource:
+    #     enabled: true
+    #     default: true
+    #   hostNetwork: true

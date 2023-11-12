@@ -9,4 +9,4 @@ resources:
   - ./pihole.yaml
   - ./truecharts.yaml
   - ./nfs-subdir-external-provisioner.yaml
-  - ./prometheus.yaml
+  - ./prometheus-k8s.yaml

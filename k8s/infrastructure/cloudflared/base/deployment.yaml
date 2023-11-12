@@ -40,3 +40,14 @@ spec:
           failureThreshold: 1
           initialDelaySeconds: 10
           periodSeconds: 10
+        resources:
+          limits:
+            cpu: "0.5"  # Set your desired CPU limit
+            memory: "256Mi"  # Set your desired memory limit
+          requests:
+            cpu: "0.2"  # Set your desired CPU request
+            memory: "128Mi"  # Set your desired memory request
+      dnsConfig:
+        nameservers:
+        - 10.69.10.69
+        - 10.69.69.10

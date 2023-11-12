@@ -7,8 +7,7 @@ metadata:
 spec:
   values:
     cluster:
-      id: 2
-      name: stg
-    k8sServiceHost: 10.69.201.201
-    operator:
-      replicas: 1
+      id: 1
+      name: prod
+    k8sServiceHost: 10.69.200.0
+    

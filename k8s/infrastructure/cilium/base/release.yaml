@@ -69,8 +69,6 @@ spec:
       leaseRenewDeadline: 60s
       leaseRetryPeriod: 10s
     localRedirectPolicy: true
-    operator:
-      replicas: 1
     routingMode: tunnel
     securityContext:
       privileged: true

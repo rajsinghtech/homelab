@@ -34,6 +34,12 @@ spec:
       customDnsEntries:
         - address=/.stg.rajsingh.info/10.69.3.201
         - address=/.rajsingh.info/10.69.3.200
+        - address=/proxmox.lan/10.69.1.2
+        - address=/router.lan/10.69.0.1
+        - address=/homeassistant.lan/10.69.3.3
+        - address=/kvm.lan/10.69.1.1
+        - address=/truenas.lan/10.69.3.2
+        - address=/portainer.lan/10.69.3.1
     
       # customCnameEntries:
       #   - cname=foo.nas,nas

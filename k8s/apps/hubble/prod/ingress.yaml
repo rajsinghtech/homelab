@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: sonarr-rajsingh-info-tls
+  name: hubble-rajsingh-info-tls
   namespace: external-name
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
@@ -9,17 +9,17 @@ metadata:
 spec:
   ingressClassName: haproxy
   rules:
-  - host: sonarr.stg.rajsingh.info
+  - host: hubble.rajsingh.info
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: sonarr-ui
+            name: hubble-ui
             port:
               number: 80
   tls:
-  - secretName: sonarr-rajsingh-info-tls
+  - secretName: hubble-rajsingh-info-tls
     hosts:
-    - sonarr.stg.rajsingh.info
+    - hubble.rajsingh.info

@@ -32,8 +32,8 @@ spec:
       passwordKey: password
     dnsmasq:
       customDnsEntries:
-        - address=/.stg.rajsingh.info/10.69.69.1
-        - address=/.rajsingh.info/10.69.69.2
+        - address=/.stg.rajsingh.info/10.69.3.201
+        - address=/.rajsingh.info/10.69.3.200
     
       # customCnameEntries:
       #   - cname=foo.nas,nas

@@ -8,5 +8,5 @@ spec:
   values:
     nfs:
       server: truenas.lan
-      path: /mnt/tank/k8s/stg
+      path: /mnt/tank/k8s/prod
     

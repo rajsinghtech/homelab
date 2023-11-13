@@ -40,16 +40,11 @@ spec:
         - address=/kvm.lan/10.69.1.1
         - address=/truenas.lan/10.69.3.2
         - address=/portainer.lan/10.69.3.1
-    
-      # customCnameEntries:
-      #   - cname=foo.nas,nas
-
     persistentVolumeClaim:
       enabled: true
-
+      storageClass: "nfs-client"
     serviceWeb:
       type: ClusterIP
-    
     podDnsConfig:
       enabled: true
       policy: "None"

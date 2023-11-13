@@ -8,3 +8,5 @@ resources:
   - ./kvm.yaml
   - ./proxmox.yaml
   - ./router.yaml
+  - ./truenas.yaml
+  - ./portainer.yaml

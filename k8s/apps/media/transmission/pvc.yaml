@@ -4,7 +4,7 @@ metadata:
   name: transmission-data
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: 1Gi
@@ -15,7 +15,7 @@ metadata:
   name: transmission-config
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: 1Gi

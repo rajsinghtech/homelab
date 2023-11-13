@@ -7,7 +7,7 @@ spec:
     app: transmission-openvpn
   ports:
   - name: http
-    port: 8006
+    port: 9091
     protocol: TCP
-    targetPort: 8006
+    targetPort: 9091
   type: ClusterIP

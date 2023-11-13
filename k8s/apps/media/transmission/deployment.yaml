@@ -15,6 +15,10 @@ spec:
       containers:
       - name: transmission-openvpn
         image: haugene/transmission-openvpn
+        ports:
+        - name: http
+          containerPort: 9091
+          protocol: TCP
         securityContext:
           capabilities:
             add:

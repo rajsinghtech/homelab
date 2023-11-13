@@ -42,11 +42,11 @@ spec:
           periodSeconds: 10
         resources:
           limits:
-            cpu: "0.5"  # Set your desired CPU limit
-            memory: "256Mi"  # Set your desired memory limit
+            cpu: "0.5" 
+            memory: "256Mi"  
           requests:
-            cpu: "0.2"  # Set your desired CPU request
-            memory: "128Mi"  # Set your desired memory request
+            cpu: "0.2"  
+            memory: "128Mi"  
       dnsPolicy: "None"
       dnsConfig:
         nameservers:

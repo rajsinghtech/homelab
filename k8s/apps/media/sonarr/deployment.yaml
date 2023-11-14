@@ -39,7 +39,7 @@ spec:
           claimName: sonarr-tv
       - name: downloads-volume
         persistentVolumeClaim:
-          claimName: transmission-data
+          claimName: transmission-tv-data
       - name: config-volume
         persistentVolumeClaim:
           claimName: sonarr-config

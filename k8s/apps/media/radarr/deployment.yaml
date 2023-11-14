@@ -1,25 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jackett
+  name: radarr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jackett
+      app: radarr
   template:
     metadata:
       labels:
-        app: jackett
+        app: radarr
     spec:
       containers:
-      - name: jackett
-        image: lscr.io/linuxserver/jackett:latest
+      - name: radarr
+        image: lscr.io/linuxserver/radarr:latest
         ports:
         - name: http
-          containerPort: 9117
+          containerPort: 7878
           protocol: TCP
         volumeMounts:
+        - name: movies-volume
+          mountPath: /movies
         - name: downloads-volume
           mountPath: /downloads
         - name: config-volume
@@ -32,9 +34,12 @@ spec:
         - name: TZ
           value: America/Chicago
       volumes:
+      - name: movies-volume
+        persistentVolumeClaim:
+          claimName: radarr-movies
       - name: downloads-volume
         persistentVolumeClaim:
-          claimName: jackett-data
+          claimName: transmission-data
       - name: config-volume
         persistentVolumeClaim:
-          claimName: jackett-config
+          claimName: radarr-config

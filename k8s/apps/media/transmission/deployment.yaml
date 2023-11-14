@@ -38,7 +38,7 @@ spec:
         - name: OPENVPN_PASSWORD
           value: Kangaroo500
         - name: LOCAL_NETWORK
-          value: 0.0.0.0/0
+          value: 10.42.0.0/16
       volumes:
       - name: data-volume
         persistentVolumeClaim:

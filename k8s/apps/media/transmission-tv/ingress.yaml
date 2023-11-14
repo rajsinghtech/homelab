@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: transmission-rajsingh-info-tls
+  name: transmission-tv-rajsingh-info-tls
   namespace: media
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
@@ -9,17 +9,17 @@ metadata:
 spec:
   ingressClassName: haproxy
   rules:
-  - host: transmission.rajsingh.info
+  - host: transmission-tv.rajsingh.info
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: transmission-openvpn
+            name: transmission-tv
             port:
               number: 9091
   tls:
-  - secretName: transmission-rajsingh-info-tls
+  - secretName: transmission-tv-rajsingh-info-tls
     hosts:
-    - transmission.rajsingh.info
+    - transmission-tv.rajsingh.info

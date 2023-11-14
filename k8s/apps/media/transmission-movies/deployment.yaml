@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: transmission-openvpn
+  name: transmission-movies
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: transmission-openvpn
+      app: transmission-movies
   template:
     metadata:
       labels:
-        app: transmission-openvpn
+        app: transmission-movies
     spec:
       containers:
-      - name: transmission-openvpn
+      - name: transmission-movies
         image: haugene/transmission-openvpn
         ports:
         - name: http
@@ -32,7 +32,7 @@ spec:
         - name: OPENVPN_PROVIDER
           value: IPVANISH
         - name: OPENVPN_CONFIG
-          value: ipvanish-US-Chicago-chi-b52
+          value: ipvanish-US-Chicago-chi-b51
         - name: OPENVPN_USERNAME
           value: snokyguy@gmail.com
         - name: OPENVPN_PASSWORD
@@ -42,7 +42,7 @@ spec:
       volumes:
       - name: data-volume
         persistentVolumeClaim:
-          claimName: transmission-data
+          claimName: transmission-movies-data
       - name: config-volume
         persistentVolumeClaim:
-          claimName: transmission-config
+          claimName: transmission-movies-config

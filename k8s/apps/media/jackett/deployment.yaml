@@ -34,7 +34,7 @@ spec:
       volumes:
       - name: downloads-volume
         persistentVolumeClaim:
-          claimName: jackett-data
+          claimName: jackett-downloads
       - name: config-volume
         persistentVolumeClaim:
           claimName: jackett-config

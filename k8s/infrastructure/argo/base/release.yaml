@@ -8,7 +8,7 @@ spec:
   interval: 2m
   chart:
     spec:
-      chart: argo
+      chart: argo-cd
       version: x
       sourceRef:
         kind: HelmRepository

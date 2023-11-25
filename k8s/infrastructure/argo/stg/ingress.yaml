@@ -6,7 +6,7 @@ metadata:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: "true"    
     haproxy.org/server-ssl: "true"
-    haproxy.org/ssl-passthrough: "true"
+    haproxy.org/ssl-redirect: "true"  
 spec:
   ingressClassName: haproxy
   rules:

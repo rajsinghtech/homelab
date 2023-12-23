@@ -34,7 +34,7 @@ spec:
         - name: TZ
           value: America/Chicago
         - name: JELLYFIN_PublishedServerUrl
-          value: https://jellyfin.rajsingh.info
+          value: jellyfin.rajsingh.info
       volumes:
       - name: tv-volume
         persistentVolumeClaim:

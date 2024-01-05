@@ -9,7 +9,7 @@ services:
       - "443:443"
       - "6443:6443"
     volumes:
-        - haproxy-config:/usr/local/etc/haproxy
+        - haproxy.cfg:/usr/local/etc/haproxy.cfg
     # networks:
     #   macvlan:
     #     ipv4_address: 10.69.4.2
@@ -20,3 +20,5 @@ volumes:
       type: nfs
       o: addr=truenas.lan,rw
       device: ":/mnt/tank/portainer/haproxy-prod"
+
+      

@@ -1,12 +1,12 @@
 version: '3.8'
 
 services:
-  elb:
+  haproxy:
     restart: always 
     image: haproxytech/haproxy-debian
     networks:
       local-net:
-        ipv4_address: 10.69.4.1
+        ipv4_address: 10.69.4.2
     ports:
       - "80:80"
       - "443:443"

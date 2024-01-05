@@ -4,6 +4,9 @@ services:
   elb:
     restart: always 
     image: haproxy-debian
+    networks:
+      local-net:
+        ipv4_address: 10.69.200.0
     ports:
       - "80:80"
       - "443:443"
@@ -12,12 +15,13 @@ services:
         - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
     networks:
       - macvlan
-# volumes:
-#   haproxy-config:
-#     driver: local
-#     driver_opts:
-#       type: nfs
-#       o: addr=truenas.lan,rw
-#       device: ":/mnt/tank/portainer/haproxy"
 
-      
+networks:
+  local-net:
+    driver: macvlan
+    driver_opts:
+      parent: eth0
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.69.200.0/16

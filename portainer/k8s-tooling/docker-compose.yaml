@@ -3,7 +3,7 @@ version: '3.8'
 services:
   elb:
     restart: always 
-    image: haproxy-debian
+    image: haproxytech/haproxy-debian
     networks:
       local-net:
         ipv4_address: 10.69.4.1

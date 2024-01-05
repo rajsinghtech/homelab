@@ -9,16 +9,16 @@ services:
       - "443:443"
       - "6443:6443"
     volumes:
-        - /portainer/k8s-tooling/haproxy.cfg:/usr/local/etc/haproxy.cfg
+        - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
     # networks:
     #   macvlan:
     #     ipv4_address: 10.69.4.2
-volumes:
-  haproxy-config:
-    driver: local
-    driver_opts:
-      type: nfs
-      o: addr=truenas.lan,rw
-      device: ":/mnt/tank/portainer/haproxy-prod"
+# volumes:
+#   haproxy-config:
+#     driver: local
+#     driver_opts:
+#       type: nfs
+#       o: addr=truenas.lan,rw
+#       device: ":/mnt/tank/portainer/haproxy"
 
       

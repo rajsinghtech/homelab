@@ -8,8 +8,8 @@ services:
       - "80:80"
       - "443:443"
       - "6443:6443"
-    volumes:
-        - /portainer/k8s-tooling/haproxy.cfg:/usr/local/etc/haproxy.cfg
+    # volumes:
+    #     - /portainer/k8s-tooling/haproxy.cfg:/usr/local/etc/haproxy.cfg
     # networks:
     #   macvlan:
     #     ipv4_address: 10.69.4.2

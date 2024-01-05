@@ -12,7 +12,7 @@ services:
       - "443:443"
       - "6443:6443"
     volumes:
-        - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+        - ./haproxy:/usr/local/etc/haproxy
 
 networks:
   local-net:

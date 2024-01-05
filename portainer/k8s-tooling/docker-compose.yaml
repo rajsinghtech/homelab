@@ -6,7 +6,7 @@ services:
     image: haproxy-debian
     networks:
       local-net:
-        ipv4_address: 10.69.200.0
+        ipv4_address: 10.69.4.1
     ports:
       - "80:80"
       - "443:443"

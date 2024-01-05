@@ -11,8 +11,7 @@ services:
     volumes:
         - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
     networks:
-      - macvlan:
-          ipv4_address: 10.69.4.2
+      - macvlan
 # volumes:
 #   haproxy-config:
 #     driver: local

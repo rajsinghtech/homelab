@@ -13,8 +13,6 @@ services:
       - "6443:6443"
     volumes:
         - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
-    networks:
-      - macvlan
 
 networks:
   local-net:

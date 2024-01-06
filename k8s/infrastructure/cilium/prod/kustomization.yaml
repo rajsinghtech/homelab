@@ -4,6 +4,7 @@ namespace: kube-system
 resources:
   - ../base
   - ./ippool.yaml
+  - ./bgp.yaml
 patches:
   - path: release.yaml
     target:

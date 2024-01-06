@@ -38,8 +38,6 @@ spec:
     persistentVolumeClaim:
       enabled: true
       storageClass: "nfs-client"
-      annotations:
-        nfs.io/storage-path: "pihole"
     serviceWeb:
       type: ClusterIP
     # podDnsConfig:

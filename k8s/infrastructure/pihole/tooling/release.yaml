@@ -1,0 +1,17 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: pihole
+  namespace: kube-system
+spec:
+  values:
+    hostname: "rajsingh-tooling"
+    serviceDns:
+      externalTrafficPolicy: Local
+      loadBalancerIP: "10.96.96.10"
+      loadBalancerIPv6: ""
+      mixedService: true
+      nodePort: ""
+      port: 53
+      type: LoadBalancer

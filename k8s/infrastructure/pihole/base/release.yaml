@@ -1,0 +1,56 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: pihole
+spec:
+  interval: 2m
+  chart:
+    spec:
+      chart: pihole
+      version: x
+      sourceRef:
+        kind: HelmRepository
+        name: pihole
+        namespace: flux-system
+  maxHistory: 2
+  install:
+    createNamespace: true
+    remediation:
+      retries: 3
+  upgrade:
+    cleanupOnFail: true
+    remediation:
+      retries: 3
+  uninstall:
+    keepHistory: false
+  values:
+    DNS1: 10.69.0.1
+    DNS2: 1.1.1.1
+    admin:
+      existingSecret: "pihole-password"
+      passwordKey: password
+    dnsmasq:
+      customDnsEntries:
+        - address=/.stg.rajsingh.info/10.69.3.201
+        - address=/.tooling.rajsingh.info/10.96.96.1
+        - address=/.rajsingh.info/10.96.10.1
+        - address=/proxmox.lan/10.69.1.2
+        - address=/router.lan/10.69.0.1
+        - address=/homeassistant.lan/10.69.3.3
+        - address=/kvm.lan/10.69.1.1
+        - address=/truenas.lan/10.69.3.2
+        - address=/portainer.lan/10.69.3.1
+    persistentVolumeClaim:
+      enabled: true
+      storageClass: "nfs-client"
+      annotations:
+        nfs.io/storage-path: "pihole"
+    serviceWeb:
+      type: ClusterIP
+    # podDnsConfig:
+    #   enabled: true
+    #   policy: "None"
+    #   nameservers:
+    #   - 1.1.1.1
+    #   - 8.8.8.8

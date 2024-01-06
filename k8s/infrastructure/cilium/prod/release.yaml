@@ -10,6 +10,7 @@ spec:
       id: 1
       name: prod
     k8sServiceHost: 10.69.200.0
+    k8sServicePort: 6443
     bgpControlPlane:
       enabled: true
     hubble:

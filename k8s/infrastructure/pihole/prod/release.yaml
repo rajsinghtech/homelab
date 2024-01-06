@@ -9,7 +9,7 @@ spec:
     hostname: "rajsingh-prod"
     serviceDns:
       externalTrafficPolicy: Local
-      loadBalancerIP: "10.69.10.69"
+      loadBalancerIP: "10.96.10.96"
       loadBalancerIPv6: ""
       mixedService: true
       nodePort: ""

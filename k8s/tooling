@@ -9,4 +9,4 @@ flux bootstrap github \
   --repository=homelab \
   --branch=main \
   --path=k8s/clusters/tooling \
-  --personal -v 2.2
+  --personal -version v2.2.2

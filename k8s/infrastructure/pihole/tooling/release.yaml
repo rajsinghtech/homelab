@@ -6,7 +6,7 @@ metadata:
   namespace: kube-system
 spec:
   values:
-    hostname: "rajsingh-stg"
+    hostname: "rajsingh-tooling"
     serviceDns:
       externalTrafficPolicy: Local
       loadBalancerIP: "10.96.96.10"

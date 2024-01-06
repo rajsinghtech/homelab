@@ -33,7 +33,8 @@ spec:
     dnsmasq:
       customDnsEntries:
         - address=/.stg.rajsingh.info/10.69.3.201
-        - address=/.rajsingh.info/10.69.3.200
+        - address=/.tooling.rajsingh.info/10.96.96.1
+        - address=/.rajsingh.info/10.96.10.1
         - address=/proxmox.lan/10.69.1.2
         - address=/router.lan/10.69.0.1
         - address=/homeassistant.lan/10.69.3.3
@@ -43,6 +44,8 @@ spec:
     persistentVolumeClaim:
       enabled: true
       storageClass: "nfs-client"
+      annotations:
+        nfs.io/storage-path: "pihole"
     serviceWeb:
       type: ClusterIP
     podDnsConfig:

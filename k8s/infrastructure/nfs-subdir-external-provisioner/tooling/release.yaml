@@ -9,6 +9,3 @@ spec:
     nfs:
       server: truenas.lan
       path: /mnt/tank/k8s/tooling
-    storageClass:
-      defaultClass: true
-      pathPattern: "${.PVC.namespace}/${.PVC.annotations.nfs.io/storage-path}"

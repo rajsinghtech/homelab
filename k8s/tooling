@@ -1,7 +1,7 @@
 ufw disable
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC='--flannel-backend=none --disable-network-policy --disable traefik --disable servicelb --disable-kube-proxy' sh -
 
-cilium install --helm-set operator.replicas=1 --helm-set k8sServiceHost=10.69.5.2 --helm-set k8sServicePort=6443 --helm-set bgpControlPlane.enabled=true
+cilium install --helm-set operator.replicas=1 --helm-set k8sServiceHost=k8s-tooling.lan --helm-set k8sServicePort=6443 --helm-set bgpControlPlane.enabled=true
 
 flux bootstrap github \
   --token-auth \
@@ -9,4 +9,4 @@ flux bootstrap github \
   --repository=homelab \
   --branch=main \
   --path=k8s/clusters/tooling \
-  --personal 
+  --personal -v 2.2

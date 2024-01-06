@@ -25,8 +25,7 @@ spec:
   uninstall:
     keepHistory: false
   values:
-    DNS1: 8.8.8.8
-    DNS2: 1.1.1.1
+    DNS1: 10.69.0.1
     admin:
       existingSecret: "pihole-password"
       passwordKey: password

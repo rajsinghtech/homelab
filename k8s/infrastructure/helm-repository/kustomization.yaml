@@ -8,6 +8,5 @@ resources:
   - ./cilium.yaml
   - ./haproxy.yaml
   - ./pihole.yaml
-  - ./truecharts.yaml
   - ./nfs-subdir-external-provisioner.yaml
   - ./prometheus-k8s.yaml

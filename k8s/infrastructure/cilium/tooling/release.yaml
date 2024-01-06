@@ -27,3 +27,12 @@ spec:
       enabled: false
     k8s-require-ipv4-pod-cidr: true
     kubeProxyReplacement: strict
+    ipam:
+      mode: kubernetes
+    tunnel: vxlan
+    externalIPs:
+      enabled: true
+    hostPort:
+      enabled: true
+    hostServices:
+      enabled: false

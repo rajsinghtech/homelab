@@ -19,13 +19,9 @@ spec:
       gracefulRestart:
         enabled: true
         restartTimeSeconds: 120
-    - peerAddress: '10.69.0.1/32'
-      peerASN: 64513
-      eBGPMultihopTTL: 10
-      connectRetryTimeSeconds: 120
-      holdTimeSeconds: 90
-      keepAliveTimeSeconds: 30
-      gracefulRestart:
-        enabled: true
-        restartTimeSeconds: 120
-        
+      serviceSelector:
+        matchExpressions:
+          - key: somekey
+            operator: NotIn
+            values:
+              - never-used-value

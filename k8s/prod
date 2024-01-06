@@ -1,5 +1,6 @@
+# Prod 1
 ufw disable
-curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC='--flannel-backend=none --disable-network-policy --disable traefik --disable servicelb --disable-kube-proxy --tls-san="k8s-tooling.lan' sh -
+curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC='--flannel-backend=none --disable-network-policy --disable traefik --disable servicelb --disable-kube-proxy --tls-san="k8s-prod1.lan --tls-san="k8s-prod2.lan --tls-san="k8s-prod3.lan --tls-san="k8s-prod.lan' sh -
 
 cilium install --helm-set operator.replicas=1 --helm-set k8sServiceHost=k8s-tooling.lan --helm-set k8sServicePort=6443 --helm-set bgpControlPlane.enabled=true
 

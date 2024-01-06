@@ -32,15 +32,8 @@ spec:
       passwordKey: password
     dnsmasq:
       customDnsEntries:
-        - address=/.stg.rajsingh.info/10.69.3.201
         - address=/.tooling.rajsingh.info/10.96.96.1
         - address=/.rajsingh.info/10.96.10.1
-        - address=/proxmox.lan/10.69.1.2
-        - address=/router.lan/10.69.0.1
-        - address=/homeassistant.lan/10.69.3.3
-        - address=/kvm.lan/10.69.1.1
-        - address=/truenas.lan/10.69.3.2
-        - address=/portainer.lan/10.69.3.1
     persistentVolumeClaim:
       enabled: true
       storageClass: "nfs-client"
@@ -52,5 +45,4 @@ spec:
       enabled: true
       policy: "None"
       nameservers:
-      - 1.1.1.1
-      - 8.8.8.8
+      - 10.69.0.1

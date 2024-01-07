@@ -8,8 +8,8 @@ spec:
   values:
     hostname: "rajsingh-tooling"
     serviceDns:
+      externalTrafficPolicy: Cluster
       loadBalancerIP: "10.96.96.10"
-      loadBalancerIPv6: ""
       mixedService: true
       nodePort: ""
       port: 53

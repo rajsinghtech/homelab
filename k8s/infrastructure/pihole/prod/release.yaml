@@ -8,6 +8,7 @@ spec:
   values:
     hostname: "rajsingh-prod"
     serviceDns:
+      externalTrafficPolicy: Cluster
       loadBalancerIP: "10.96.10.96"
       loadBalancerIPv6: ""
       mixedService: true

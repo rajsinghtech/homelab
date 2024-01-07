@@ -26,7 +26,6 @@ spec:
     keepHistory: false
   values:
     DNS1: 10.69.0.1
-    DNS2: 1.1.1.1
     admin:
       existingSecret: "pihole-password"
       passwordKey: password

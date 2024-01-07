@@ -12,3 +12,8 @@ spec:
   prune: true
   wait: true
   timeout: 5m0s
+  dependsOn:
+    - name: infrastructure-cert-manager
+    - name: infrastructure-cilium
+    - name: infrastructure-cilium
+    - name: infrastructure-nfs-subdir-external-provisioner

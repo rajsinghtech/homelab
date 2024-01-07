@@ -7,7 +7,7 @@ spec:
    matchLabels:
      kubernetes.io/hostname: k8s-prod1
  virtualRouters: 
- - localASN: 64514
+ - localASN: 64515
    exportPodCIDR: true
    neighbors: 
     - peerAddress: '10.69.0.1/32'

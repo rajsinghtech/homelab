@@ -5,7 +5,7 @@ metadata:
 spec: 
  nodeSelector:
    matchLabels:
-     k3s.io/hostname: k8s-prod1
+     kubernetes.io/hostname: k8s-prod1
  virtualRouters: 
  - localASN: 6451
    exportPodCIDR: true

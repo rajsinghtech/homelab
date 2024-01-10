@@ -39,9 +39,9 @@ spec:
       storageClass: "nfs-client"
     serviceWeb:
       type: ClusterIP
-    # podDnsConfig:
-    #   enabled: true
-    #   policy: "None"
-    #   nameservers:
-    #   - 1.1.1.1
+    podDnsConfig:
+      enabled: true
+      policy: "None"
+      nameservers:
+      - 10.69.0.1
     #   - 8.8.8.8

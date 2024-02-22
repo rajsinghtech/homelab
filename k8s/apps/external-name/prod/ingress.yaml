@@ -180,6 +180,6 @@ spec:
             port:
               number: 8096
   tls:
-  - secretName: router-rajsingh-info-tls
+  - secretName: jellyfin-rajsingh-info-tls
     hosts:
-    - router.rajsingh.info
+    - jellyfin.rajsingh.info

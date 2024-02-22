@@ -10,3 +10,4 @@ resources:
   - ./router.yaml
   - ./truenas.yaml
   - ./portainer.yaml
+  - ./jellyfin.yaml

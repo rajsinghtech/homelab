@@ -221,14 +221,13 @@ subsets:
      - port: 8680
 
 ---
- kind: "Service"
-  apiVersion: "v1"
-  metadata:
-    name: code
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  name: code
   spec:
     ports:
-      -
-        name: "code"
+      - name: "code"
         protocol: "TCP"
         port: 8680
         targetPort: 8680 

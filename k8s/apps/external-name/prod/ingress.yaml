@@ -209,3 +209,13 @@ spec:
   - secretName: code-rajsingh-info-tls
     hosts:
     - code.rajsingh.info
+---
+kind: Endpoints
+apiVersion: v1
+metadata:
+ name: code
+subsets:
+ - addresses:
+     - ip: 10.69.3.1
+   ports:
+     - port: 8680

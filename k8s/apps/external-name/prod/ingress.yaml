@@ -219,3 +219,16 @@ subsets:
      - ip: 10.69.3.1
    ports:
      - port: 8680
+
+---
+ kind: "Service"
+  apiVersion: "v1"
+  metadata:
+    name: code
+  spec:
+    ports:
+      -
+        name: "code"
+        protocol: "TCP"
+        port: 8680
+        targetPort: 8680 

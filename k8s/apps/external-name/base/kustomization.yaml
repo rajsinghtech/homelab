@@ -11,3 +11,4 @@ resources:
   - ./truenas.yaml
   - ./portainer.yaml
   - ./jellyfin.yaml
+  - ./docker.yaml

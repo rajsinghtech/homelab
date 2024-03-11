@@ -9,7 +9,6 @@ resources:
   - ./proxmox.yaml
   - ./router.yaml
   - ./truenas.yaml
-  - ./portainer.yaml
   - ./jellyfin.yaml
   - ./docker.yaml
   - ./uptime.yaml

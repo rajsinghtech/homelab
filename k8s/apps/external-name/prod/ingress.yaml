@@ -53,32 +53,6 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: portainer-rajsingh-info-tls
-  namespace: external-name
-  annotations:
-    cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
-    kubernetes.io/tls-acme: 'true'
-spec:
-  ingressClassName: haproxy
-  rules:
-  - host: portainer.rajsingh.info
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: portainer-svc
-            port:
-              number: 9000
-  tls:
-  - secretName: portainer-rajsingh-info-tls
-    hosts:
-    - portainer.rajsingh.info
---- 
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
   name: kvm-rajsingh-info-tls
   namespace: external-name
   annotations:

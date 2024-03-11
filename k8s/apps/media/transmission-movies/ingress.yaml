@@ -6,6 +6,8 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
+    item.homer.rajsingh.info/Logo: https://transmissionbt.com/assets/images/Transmission_icon.png
+    item.homer.rajsingh.info/Name: "Transmission Movies"
 spec:
   ingressClassName: haproxy
   rules:

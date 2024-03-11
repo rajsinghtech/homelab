@@ -187,45 +187,29 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: code-rajsingh-info-tls
+  name: uptime-rajsingh-info-tls
   namespace: external-name
   annotations:
+    item.homer.rajsingh.info/Logo: https://uptime.kuma.pet/img/icon.svg
+    item.homer.rajsingh.info/Name: "UptimeKuma"
+    item.homer.rajsingh.info/Type: UptimeKuma
+    item.homer.rajsingh.info/Url: http://uptime.lan:3001
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
 spec:
   ingressClassName: haproxy
   rules:
-  - host: code.rajsingh.info
+  - host: uptime.rajsingh.info
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: code-svc
+            name: uptime-svc
             port:
-              number: 8680
+              number: 3001
   tls:
-  - secretName: code-rajsingh-info-tls
+  - secretName: uptime-rajsingh-info-tls
     hosts:
-    - code.rajsingh.info
----
-kind: Endpoints
-apiVersion: v1
-metadata:
- name: code
-subsets:
- - addresses:
-     - ip: 10.69.3.1
-   ports:
-     - port: 8680
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: code
-spec:
- ports:
-    - protocol: TCP
-      port: 8680
-      targetPort: 8680
+    - uptime.rajsingh.info

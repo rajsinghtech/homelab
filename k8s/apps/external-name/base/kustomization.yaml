@@ -12,3 +12,4 @@ resources:
   - ./portainer.yaml
   - ./jellyfin.yaml
   - ./docker.yaml
+  - ./uptime.yaml

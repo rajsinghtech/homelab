@@ -6,6 +6,11 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
+    item.homer.rajsingh.info/Logo: https://sonarr.rajsingh.info/Content/Images/logo.svg
+    item.homer.rajsingh.info/Name: "Sonarr"
+    item.homer.rajsingh.info/Type: Sonarr
+    item.homer.rajsingh.info/Apikey: 98672a68a572443bbb3b3ae9d5222e3d
+    item.homer.rajsingh.info/Target: _blank
 spec:
   ingressClassName: haproxy
   rules:

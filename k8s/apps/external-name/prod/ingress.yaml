@@ -118,8 +118,8 @@ metadata:
     item.homer.rajsingh.info/Name: "Proxmox"
     item.homer.rajsingh.info/Type: Proxmox
     item.homer.rajsingh.info/Node: Homelab
-    item.homer.rajsingh.info/Warningvalue: 50
-    item.homer.rajsingh.info/Dangervalue: 80
+    item.homer.rajsingh.info/Warningvalue: 70
+    item.homer.rajsingh.info/Dangervalue: 90
     item.homer.rajsingh.info/Apikey: PVEAPIToken=root@pam!homer=21e12277-c2f0-4c57-9322-b637426431da
 spec:
   ingressClassName: haproxy

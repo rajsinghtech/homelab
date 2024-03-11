@@ -6,6 +6,11 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
+    item.homer.rajsingh.info/Logo: https://radarr.rajsingh.info/Content/Images/logo.svg
+    item.homer.rajsingh.info/Name: "Radarr"
+    item.homer.rajsingh.info/Type: Radarr
+    item.homer.rajsingh.info/Apikey: 703cbde349084707927039158e24029b
+    item.homer.rajsingh.info/Target: _blank
 spec:
   ingressClassName: haproxy
   rules:

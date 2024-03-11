@@ -166,6 +166,11 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
+    item.homer.rajsingh.info/Logo: https://jellyfin.org/images/logo.svg
+    item.homer.rajsingh.info/Name: "Jellyfin"
+    item.homer.rajsingh.info/Type: Emby
+    item.homer.rajsingh.info/Apikey: 5ab8d20cb79245429b25fe11fdf500a2
+    item.homer.rajsingh.info/Librarytype: series
 spec:
   ingressClassName: haproxy
   rules:
@@ -193,7 +198,6 @@ metadata:
     item.homer.rajsingh.info/Logo: https://uptime.kuma.pet/img/icon.svg
     item.homer.rajsingh.info/Name: "UptimeKuma"
     item.homer.rajsingh.info/Type: UptimeKuma
-    item.homer.rajsingh.info/Url: http://uptime.lan:3001
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
 spec:

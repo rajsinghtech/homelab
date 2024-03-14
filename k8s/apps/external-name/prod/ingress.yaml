@@ -31,6 +31,7 @@ metadata:
   namespace: external-name
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
+    item.homer.rajsingh.info/Name: "TrueNas"
     kubernetes.io/tls-acme: 'true'
 spec:
   ingressClassName: haproxy

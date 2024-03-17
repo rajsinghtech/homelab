@@ -6,6 +6,8 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
+    item.homer.rajsingh.info/Logo: https://avatars.githubusercontent.com/u/21054566?s=280&v=4
+    item.homer.rajsingh.info/Name: "Hubble"
 spec:
   ingressClassName: haproxy
   rules:

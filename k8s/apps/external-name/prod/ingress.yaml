@@ -4,6 +4,8 @@ metadata:
   name: homeassistant-rajsingh-info-tls
   namespace: external-name
   annotations:
+    item.homer.rajsingh.info/Logo: https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Home_Assistant_logo_%282023%29.svg/240px-Home_Assistant_logo_%282023%29.svg.png
+    item.homer.rajsingh.info/Name: "Home Assistant"
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
 spec:
@@ -30,8 +32,9 @@ metadata:
   name: truenas-rajsingh-info-tls
   namespace: external-name
   annotations:
+    item.homer.rajsingh.info/Logo: https://www.truenas.com/wp-content/uploads/2020/07/truenas_open_storage-logo-full-color-rgb-1.svg
+    item.homer.rajsingh.info/Name: "TrueNAS Scale"
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
-    item.homer.rajsingh.info/Name: "TrueNas"
     kubernetes.io/tls-acme: 'true'
 spec:
   ingressClassName: haproxy
@@ -61,6 +64,8 @@ metadata:
     haproxy.org/server-ssl: "true"
     haproxy.org/ssl-redirect: "true"  
     kubernetes.io/tls-acme: 'true'
+    item.homer.rajsingh.info/Logo: https://tuchacloud.com/wp-content/uploads/2016/03/KVM-tucha.png
+    item.homer.rajsingh.info/Name: "PIKVM"
 spec:
   ingressClassName: haproxy
   rules:
@@ -120,6 +125,8 @@ metadata:
   name: router-rajsingh-info-tls
   namespace: external-name
   annotations:
+    item.homer.rajsingh.info/Logo: https://i.pngimg.me/thumb/f/720/m2i8H7i8m2A0b1d3.jpg
+    item.homer.rajsingh.info/Name: "Router"
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
 spec:

@@ -32,7 +32,7 @@ metadata:
   name: truenas-rajsingh-info-tls
   namespace: external-name
   annotations:
-    item.homer.rajsingh.info/Logo: https://www.truenas.com/wp-content/uploads/2020/07/truenas_open_storage-logo-full-color-rgb-1.svg
+    item.homer.rajsingh.info/Logo: https://www.ixsystems.com/wp-content/uploads/2021/02/truenas_scale-logo-full-color-rgb.png
     item.homer.rajsingh.info/Name: "TrueNAS Scale"
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'
@@ -125,7 +125,7 @@ metadata:
   name: router-rajsingh-info-tls
   namespace: external-name
   annotations:
-    item.homer.rajsingh.info/Logo: https://i.pngimg.me/thumb/f/720/m2i8H7i8m2A0b1d3.jpg
+    item.homer.rajsingh.info/Logo: https://openwrt.org/_media/logo.png
     item.homer.rajsingh.info/Name: "Router"
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: 'true'

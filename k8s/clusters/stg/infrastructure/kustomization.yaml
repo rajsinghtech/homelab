@@ -3,3 +3,4 @@ kind: Kustomization
 namePrefix: infrastructure-
 resources:
 - cert-manager.yaml
+- cilium.yaml

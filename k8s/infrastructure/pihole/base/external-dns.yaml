@@ -90,7 +90,7 @@ spec:
     type: Recreate
   selector:
     matchLabels:
-      app: external-dns
+      app: xternal-dns-prod
   template:
     metadata:
       labels:

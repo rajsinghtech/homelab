@@ -31,8 +31,8 @@ spec:
       passwordKey: password
     dnsmasq:
       customDnsEntries:
-        - address=/.stg.rajsingh.info/10.69.3.201
-        - address=/.tooling.rajsingh.info/10.96.96.1
+        - address=/-stg.rajsingh.info/10.69.3.201
+        - address=/-tooling.rajsingh.info/10.96.96.1
         - address=/.rajsingh.info/10.96.10.1
     persistentVolumeClaim:
       enabled: true

@@ -26,4 +26,4 @@ spec:
   values:
     storageClass:
       defaultClass: true
-      pathPattern: "${.PVC.namespace}/${.PVC.name}"
+      pathPattern: "${NFS_PATHPATTERN}"

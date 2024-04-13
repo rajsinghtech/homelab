@@ -11,7 +11,7 @@ spec:
   path: ./k8s/apps/hubble/prod
   prune: true
   wait: true
-  timeout: 5m0s
+
   dependsOn:
     - name: infrastructure-cert-manager
     - name: infrastructure-cilium

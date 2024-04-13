@@ -11,4 +11,3 @@ spec:
   path: ./k8s/infrastructure/cilium/tooling
   prune: false
   wait: true
-  timeout: 5m0s

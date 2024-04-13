@@ -11,4 +11,3 @@ spec:
   path: ./k8s/infrastructure/nfs-subdir-external-provisioner/prod
   prune: true
   wait: true
-  timeout: 5m0s

@@ -11,4 +11,3 @@ spec:
   path: ./k8s/apps/external-name/prod
   prune: true
   wait: true
-  timeout: 5m0s

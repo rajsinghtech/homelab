@@ -4,3 +4,4 @@ namePrefix: infrastructure-
 resources:
 - cert-manager.yaml
 - cilium.yaml
+- nfs-subdir-external-provisioner.yaml

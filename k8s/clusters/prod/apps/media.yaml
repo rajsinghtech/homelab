@@ -11,7 +11,7 @@ spec:
   path: ./k8s/apps/media
   prune: true
   wait: true
-
+  timeout: 5m
   dependsOn:
     - name: infrastructure-cert-manager
     - name: infrastructure-cilium

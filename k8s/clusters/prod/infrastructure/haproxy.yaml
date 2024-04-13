@@ -11,3 +11,4 @@ spec:
   path: ./k8s/infrastructure/haproxy/prod
   prune: true
   wait: true
+  timeout: 5m

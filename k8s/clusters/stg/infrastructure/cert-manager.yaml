@@ -11,6 +11,6 @@ spec:
   path: ./k8s/infrastructure/cert-manager
   prune: true
   wait: true
-
+  timeout: 5m
   dependsOn:
     - name: infrastructure-cilium

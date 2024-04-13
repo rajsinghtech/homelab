@@ -5,6 +5,7 @@ resources:
 - cert-manager.yaml
 - cilium.yaml
 - nfs-subdir-external-provisioner.yaml
+- pihole.yaml
 patches:
   - path: base.yaml
     target:

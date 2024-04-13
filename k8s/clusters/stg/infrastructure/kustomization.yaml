@@ -6,6 +6,7 @@ resources:
 - cilium.yaml
 - nfs-subdir-external-provisioner.yaml
 - pihole.yaml
+- cloudflared.yaml
 patches:
   - path: base.yaml
     target:

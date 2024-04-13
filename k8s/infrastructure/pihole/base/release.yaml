@@ -5,6 +5,7 @@ metadata:
   name: pihole
 spec:
   interval: 2m
+  driftDetection: true
   chart:
     spec:
       chart: pihole

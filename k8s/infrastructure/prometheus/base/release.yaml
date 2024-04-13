@@ -5,6 +5,7 @@ metadata:
   name: prometheus
 spec:
   interval: 2m
+  driftDetection: true
   chart:
     spec:
       chart: prometheus

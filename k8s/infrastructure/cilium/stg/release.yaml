@@ -42,6 +42,10 @@ spec:
     ingressController:
       enabled: true
       loadbalancerMode: dedicated
+      default: true
+      service:
+        type: LoadBalancer
+        loadBalancerIP: 10.96.11.1
     egressGateway:
       enabled: true
     bpf:

@@ -11,7 +11,7 @@ metadata:
     item.homer.rajsingh.info/Type: PiHole
     item.homer.rajsingh.info/Apikey: fd8054cf0a70de33ff772341546f1cc33e0eff21b6f181946280a3502b0bf027
 spec:
-  ingressClassName: haproxy
+  ingressClassName: cilium
   rules:
     - host: pihole${INGRESS_SUFFIX/./-}
       http:

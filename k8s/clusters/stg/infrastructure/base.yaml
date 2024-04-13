@@ -10,7 +10,7 @@ spec:
     name: flux-system
   prune: true
   wait: true
-
+  force: true
   postBuild:
     substituteFrom:
     - kind: ConfigMap

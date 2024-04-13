@@ -12,7 +12,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: pihole
-        namespace: flux-system
   maxHistory: 2
   install:
     createNamespace: true

@@ -39,6 +39,8 @@ spec:
       - --policy=upsert-only
       - --provider=pihole
       - '--pihole-server=http://pihole-web'
+    provider:
+      name: pihole
 # ---
 # apiVersion: apps/v1
 # kind: Deployment

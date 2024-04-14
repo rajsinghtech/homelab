@@ -26,6 +26,8 @@ spec:
   uninstall:
     keepHistory: false
   values:
+    extraArgs:
+      - --pihole-server=http://pihole-web.pihole.svc.cluster.local
     provider:
       name: pihole
       webhook:
@@ -41,7 +43,7 @@ spec:
           - --registry=noop
           - --policy=upsert-only
           - --provider=pihole
-          - '--pihole-server=http://pihole-web'
+          - "--pihole-server=http://pihole-web"
 
 # ---
 # apiVersion: apps/v1

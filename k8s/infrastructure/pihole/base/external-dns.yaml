@@ -92,3 +92,4 @@ spec:
       nameservers:
       - 10.96.10.96
       - 10.96.96.10
+    dnsPolicy: "None"

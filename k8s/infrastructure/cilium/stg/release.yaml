@@ -57,9 +57,9 @@ spec:
       loadbalancerMode: dedicated
       default: true
       enforceHttps: false
-      service:
-        type: LoadBalancer
-        loadBalancerIP: 10.96.11.1
+      # service:
+      #   type: LoadBalancer
+      #   loadBalancerIP: 10.96.11.1
     egressGateway:
       enabled: true
     bpf:

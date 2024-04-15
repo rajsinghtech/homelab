@@ -56,6 +56,7 @@ spec:
       enabled: true
       loadbalancerMode: dedicated
       default: true
+      enforceHttps: false
       service:
         type: LoadBalancer
         loadBalancerIP: 10.96.11.1

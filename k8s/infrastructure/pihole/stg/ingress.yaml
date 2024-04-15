@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: cilium
   rules:
-    - host: pihole${INGRESS_SUFFIX/./-}
+    - host: pihole${INGRESS_SUFFIX}
       http:
         paths:
           - path: /

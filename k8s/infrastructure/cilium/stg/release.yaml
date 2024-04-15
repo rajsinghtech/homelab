@@ -47,6 +47,8 @@ spec:
       enabled: true
     hostServices:
       enabled: false
+    envoy:
+      enabled: true
     envoyConfig:
       enabled: true
     loadBalancer:

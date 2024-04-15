@@ -5,11 +5,6 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: rajsingh-info-global-issuer
     kubernetes.io/tls-acme: "true"
-    item.homer.rajsingh.info/Logo: https://pihole${INGRESS_SUFFIX/./-}/admin/img/logo.svg
-    item.homer.rajsingh.info/Name: "PiHole"
-    item.homer.rajsingh.info/Url: "https://pihole${INGRESS_SUFFIX/./-}/admin"
-    item.homer.rajsingh.info/Type: PiHole
-    item.homer.rajsingh.info/Apikey: fd8054cf0a70de33ff772341546f1cc33e0eff21b6f181946280a3502b0bf027
 spec:
   ingressClassName: cilium
   rules:
@@ -26,4 +21,4 @@ spec:
   tls:
     - secretName: pihole-rajsingh-info-tls
       hosts:
-        - pihole${INGRESS_SUFFIX/./-}
+        - pihole${INGRESS_SUFFIX}

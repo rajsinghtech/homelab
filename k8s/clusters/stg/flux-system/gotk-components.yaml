@@ -9591,7 +9591,7 @@ spec:
   selector:
     app: notification-controller
   type: LoadBalancer
-  loadBalancerIP: 10.69.11.11
+  loadBalancerIP: 10.96.11.11
 ---
 apiVersion: apps/v1
 kind: Deployment

@@ -9590,7 +9590,8 @@ spec:
     targetPort: http-webhook
   selector:
     app: notification-controller
-  type: ClusterIP
+  type: LoadBalancer
+  loadBalancerIP: 10.69.11.11
 ---
 apiVersion: apps/v1
 kind: Deployment

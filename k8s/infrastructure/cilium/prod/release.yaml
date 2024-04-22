@@ -24,7 +24,6 @@ spec:
     ipv6:
       enabled: false
     k8s-require-ipv4-pod-cidr: true
-    kubeProxyReplacement: strict
     ipam:
       mode: kubernetes
     tunnel: vxlan
@@ -34,3 +33,15 @@ spec:
       enabled: true
     hostServices:
       enabled: false
+    kubeProxyReplacement: true
+    envoy:
+      enabled: true
+    envoyConfig:
+      enabled: true
+    loadBalancer:
+      l7:
+        backend: envoy
+    egressGateway:
+      enabled: true
+    bpf:
+      masquerade: true

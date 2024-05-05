@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: readarr
-        image: lscr.io/linuxserver/readarr:latest
+        image: lscr.io/linuxserver/readarr:develop
         ports:
         - name: http
-          containerPort: 8989
+          containerPort: 8787
           protocol: TCP
         volumeMounts:
         - name: books-volume

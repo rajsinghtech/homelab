@@ -23,7 +23,7 @@ spec:
           service:
             name: readarr
             port:
-              number: 8989
+              number: 8787
   tls:
   - secretName: readarr-rajsingh-info-tls
     hosts:

@@ -7,7 +7,7 @@ spec:
     app: readarr
   ports:
   - name: http
-    port: 8989
+    port: 8787
     protocol: TCP
-    targetPort: 8989
+    targetPort: 8787
   type: ClusterIP

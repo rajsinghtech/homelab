@@ -7,5 +7,5 @@ metadata:
 spec:
   values:
     nfs:
-      server: truenas.lan
-      path: /mnt/tank/k8s/tooling
+      server: proxmox.lan
+      path: /tank/k8s/tooling
